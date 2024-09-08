@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mukta" ;
+
+}
+
+.weater-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 70px;
+  padding: 40px 20px;
+  width: 450px;
+  height: 50vh;
+  background-color: #0B2F9F;
+  color: white;
+  border-radius: 20px;
+}
+.search-bar{
+  margin-bottom: 50px;
+  margin-bottom: 70px;
+}
+
+.weater-content{
+  height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weater-icon{
+  height: 20vh;
+  width: auto;
+}
+
+.info-weater-div{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.weater-info{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Mukta" ;
+  font-weight: 500;
+
+}
+
+.weater-main{
+  font-family: "Mukta" ;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: auto;
+}
+
+
+
+
+.ui-input-container {
+  position: relative;
+  width: auto;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-input {
+  color: white;
+  font-family: "Mukta" ;
+
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  transition: border-color 0.3s;
+}
+
+.ui-input:focus {
+  border-color: #D2E0FB;
+}
+
+.ui-input-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #D2E0FB;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.ui-input:focus+.ui-input-underline {
+  transform: scaleX(1);
+}
+
+.ui-input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(108, 99, 255, 0.1);
+  transition: width 0.3s;
+}
+
+.ui-input:focus~.ui-input-highlight {
+  width: 100%;
+}
+
+.ui-input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  transition: color 0.3s;
+}
+
+.ui-input:focus~.ui-input-icon {
+  color: #D2E0FB;
+}
+
+.ui-input-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.search-button {
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: "Mukta" ;
+}
+
+.search-button:hover {
+  background-color: #D2E0FB;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  color: #0B2F9F;
+  transform: translateX(7px);
+}
+
+.search-button:active {
+  transform: translateX(-1px);
+}
+
